@@ -34,7 +34,7 @@ export class ParentComponent implements OnInit {
     this.filteredItems = [...this.items];
   }
 
-  filterBy(type: any) {
+  filterBy(type: any):any {
     this.filteredItems=[...this.items.filter((x) => x.type === type)];
   }
 
